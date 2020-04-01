@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+
+  adminer:
+    image: adminer:latest
+    ports:
+      - 8090:8080
+
+  mailcatcher:
+    image: djfarrelly/maildev
+    ports:
+      - 8091:80
